@@ -1,6 +1,6 @@
-# bootstrap-boilerplatereadme
-## Cloning a Repo
+# Work on that 8-ball!
 
+## Cloning a Repo
  Steps to clone repo
 (navigate to your project folder in your terminal)
   git clone github.com/AngelaGraham/ bootstrap-boilerplate.git
@@ -15,8 +15,7 @@ What is included?
   -styles.css
 3. js folder
   -scripts.js
-4. img folder
+4. 
 ## Contact Methods 
 You may contact the student learner at angelagraham101@gmail.com 
 
-Special thanks to all the patient teachers, tutors, and fellow students who contributed to this creating this repository. 
