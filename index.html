@@ -4,25 +4,70 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Magic8ballYes</title>
 
-    <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="form">
+        <h1>Magic8ball</h1>
+          <label for="question">Ask me anything!</label><br> 
+          <input type="text" id = "question" question = "question" value="#" placeholder ="Ask me anything!"> 
+          <br> 
+          <br>
+          <img id="8ball"/>
+          <button onclick = "ask"()>Ask</button>
+            <!-- ask button is the aka show image, or show the 8ball button -->
+          <br>
+    </div>
+
+    <div id ="answers">
+      <div class = "zero"><img scr="images/magic8ball_1.png"></div>
+      <div class="one"> <img scr="images/magic8ball_2.png"></div>
+      <div class="two"><img scr ="images/magic8ball_3.png"> </div>
+      <div class="three"><img scr ="images/magic8ball_4.png"> </div>
+      <div class="four"> <img scr ="images/magic8ball_5.png"></div>
+      <div class="five"><img scr ="images/magic8ball_6.png"> </div>
+      <div class="six"> <img scr ="images/magic8ball_7.png"></div>
+      <div class="seven"><img scr ="images/magic8ball_8.png"> </div>
+      <div class="eight"> <img scr ="images/magic8ball_9.png"></div>
+      <div class="nine"> <img scr ="images/magic8ball_10.png"></div>
+      <div class="ten"> <img scr ="images/magic8ball_11.png"></div>
+      <div class="elevn"> <img scr ="images/magic8ball_12.png"></div>
+      <div class="twelve"> <img scr ="images/magic8ball_13.png"></div>
+      <div class="thirteen"> <img scr ="images/magic8ball_14.png"></div>
+      <div class="fourteen"> <img scr ="images/magic8ball_15.png"></div>
+      <div class="fifteen"> <img scr ="images/magic8ball_16.png"></div>
+      <div class="sixteen"> <img scr ="images/magic8ball_17.png"></div>
+      <div class="seventeen"><img scr ="images/magic8ball_18.png"> </div>
+      <div class="eighteen"> <img scr ="images/magic8ball_19.png"></div>
+      <div class="nineteen"> <img scr ="images/magic8ball_20.png"></div>
+      <!-- <div class="twenty"> </div> -->
+    </div> 
+
+
+      <!-- 
+         https://stackoverflow.com/questions/51331370/displaying-a-random-div-by-appendchild
+         https://www.w3schools.com/jsref/jsref_random.asp
+         https://www.w3resource.com/javascript-exercises/javascript-dom-exercise-11.php
+         https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array -->
+ <!-- Replace the input field with the user's question when displaying the answer -->
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src = "js/script.js"></script> 
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
   </body>
 </html>
