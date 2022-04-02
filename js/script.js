@@ -1,35 +1,65 @@
-let answersLength = 20
-  let zero ="images/magic8ball_1.png"
-  let one ="images/magic8ball_2.png"
-  let two ="images/magic8ball_3.png"
-  let three = "images/magic8ball_4.png"
-  let four ="images/magic8ball_5.png"
-  let five = "images/magic8ball_6.png"
-  let six ="images/magic8ball_7.png"
-  let seven = "images/magic8ball_8.png"
-  let eight ="images/magic8ball_9.png"
-  let nine = "images/magic8ball_10.png"
-  let ten ="images/magic8ball_11.png"
-  let eleven ="images/magic8ball_12.png"
-  let twelve ="images/magic8ball_13.png"
-  let thirteen ="images/magic8ball_14.png"
-  let fourteen ="images/magic8ball_15.png"
-  let fifteen ="images/magic8ball_16.png"
-  let sixteen ="images/magic8ball_17.png"
-  let seventeen ="images/magic8ball_18.png"
-  let eighteen ="images/magic8ball_19.png"
-  let nineteen = "images/magic8ball_20.png"
+// let answersLength = 20
+  // let zero ="images/magic8ball_1.png"
+  // let one ="images/magic8ball_2.png"
+  // let two ="images/magic8ball_3.png"
+  // let three = "images/magic8ball_4.png"
+  // let four ="images/magic8ball_5.png"
+  // let five = "images/magic8ball_6.png"
+  // let six ="images/magic8ball_7.png"
+  // let seven = "images/magic8ball_8.png"
+  // let eight ="images/magic8ball_9.png"
+  // let nine = "images/magic8ball_10.png"
+  // let ten ="images/magic8ball_11.png"
+  // let eleven ="images/magic8ball_12.png"
+  // let twelve ="images/magic8ball_13.png"
+  // let thirteen ="images/magic8ball_14.png"
+  // let fourteen ="images/magic8ball_15.png"
+  // let fifteen ="images/magic8ball_16.png"
+  // let sixteen ="images/magic8ball_17.png"
+  // let seventeen ="images/magic8ball_18.png"
+  // let eighteen ="images/magic8ball_19.png"
+  // let nineteen = "images/magic8ball_20.png"
 
-let answersImages = [zero, one, two, three, four, 
-  five, six, seven, eight, nine, ten, eleven, tweleve,
-  thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen];
+  let answersImages = [
+  "images/magic8ball_1.png",
+  "images/magic8ball_2.png",
+  "images/magic8ball_3.png",
+  "images/magic8ball_4.png",
+  "images/magic8ball_5.png",
+  "images/magic8ball_6.png",
+  "images/magic8ball_7.png",
+  "images/magic8ball_8.png",
+  "images/magic8ball_9.png",
+  "images/magic8ball_10.png",
+  "images/magic8ball_11.png",
+  "images/magic8ball_12.png",
+  "images/magic8ball_13.png",
+  "images/magic8ball_14.png",
+  "images/magic8ball_15.png",,
+  "images/magic8ball_16.png",
+  "images/magic8ball_17.png",
+  "images/magic8ball_18.png",
+  "images/magic8ball_19.png",
+  "images/magic8ball_20.png"
+  ]
 
-  function question(text) 
+// let answersImages = [zero, one, two, three, four, 
+//   five, six, seven, eight, nine, ten, eleven, twelve,
+//   thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen];
+
+  function question(text) {}
   function ask() {
-      return Math.floor(Math.random()*answersRandomImagesLength);
+    const randomIndex = Math.floor(Math.random()*answersImages.length);
+    console.log(randomIndex);
+    let result = document.getElementById("answers")
+    
+  for (let i=1; i<=answersImages.length; i++) {
+
   }
-  let ask = document.getElementById("button");
-  ask.addEventListener("click", ask);
+}
+  
+  let button = document.getElementById("askButton");
+  button.addEventListener("click", ask);
 
     // (let randomAnswers = document.getElementById("8ball").src = `./magic/magic8ball_${randomNumber}`.png)
     //  let randomNumber = Math.floor(Math.random()* answers.length ++);
